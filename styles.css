@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Amatic SC', cursive;
+}
+
+
+body {
+    background-image: url(https://dl.dropbox.com/s/qmf0wx84aeiibr9/Web%201920%20%E2%80%93%202%402x.png?);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100vw;
+    height: 100vh;
+}
+
+#title {
+    grid-column: 1 / 4;
+    justify-self: center;
+    align-self: center;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+#user-input-div {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 11%;
+    display: block;
+    width: 100%;
+}
+
+#user-input-div input {
+    font-size: 7rem;
+    background-color: #89CFE7;
+    border: none;
+    outline: none;
+    text-align: center;
+    width: 100%;
+}
+
+#convert-button-div {
+    justify-self: center;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    align-self: end;
+    margin-bottom: 11.5%;
+    display: inline-block;
+}
+
+#convert-button-div button {
+    font-size: 2rem;
+    padding: 5%;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input::-webkit-input-placeholder {
+    font-size: 4rem;
+    line-height: 3;
+}
+
+/* Media Queries! */
+
+@media screen and (max-width: 991px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    #user-input-div input {
+        font-size: 5rem;
+    }
+
+    input::-webkit-input-placeholder {
+        font-size: 3rem;
+        line-height: 3;
+    }
+
+    #user-input-div {
+        margin-top: 2%;
+    }
+
+    #convert-button-div button {
+        font-size: 1.5rem;
+        padding: 5%;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+
+    #user-input-div {
+        margin-bottom: 22%;
+    }
+
+    input::-webkit-input-placeholder {
+        font-size: 2.5rem;
+        line-height: 3;
+    }
+
+    #convert-button-div {
+        margin-bottom: 15.5%;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    #user-input-div {
+        margin-bottom: 5%;
+    }
+
+    #convert-button-div {
+        margin-bottom: 27%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    #convert-button-div {
+        margin-bottom: 25%;
+    }
+}
